@@ -4,6 +4,16 @@ export default Ember.Route.extend({
   auth: Ember.inject.service(),
   flashMessages: Ember.inject.service(),
 
+  activate: function(){
+        $('body').css('background', "url('http://i.imgur.com/EPPfWf1.jpg') no-repeat center center fixed");
+        $('body').css('background-size', 'cover');
+        Ember.$('body').append()
+      },
+  deactivate: function(){
+        $('body').css('background', "none");
+
+      },
+
   actions: {
     signOut () {
       this.get('auth').signOut()
@@ -35,4 +45,5 @@ export default Ember.Route.extend({
       return false;
     },
   },
+
 });
