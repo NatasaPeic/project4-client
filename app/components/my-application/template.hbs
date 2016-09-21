@@ -8,10 +8,12 @@
         <li>{{#link-to "users"}}Users{{/link-to}}</li>
         {{/if}} --}}
         <li>{{#link-to "about"}}About{{/link-to}}</li>
+
+        <li>{{#link-to "all-memories"}}All Memories{{/link-to}}</li>
         {{#if isAuthenticated}}
-        <li>{{#link-to "memories"}}Memories{{/link-to}}</li>
+        <li>{{#link-to "memories"}}My Memories{{/link-to}}</li>
         {{/if}}
-        <li>{{#link-to "all-memories"}}All memories{{/link-to}}</li>
+        <li>{{#link-to "new-memory"}}Create{{/link-to}}</li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
         {{#if isAuthenticated}}
