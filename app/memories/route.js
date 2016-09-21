@@ -10,5 +10,8 @@ export default Ember.Route.extend({
         $('body').css('background', "none");
 
       },
+      model() {
+        return this.get('store').findAll('memory');
+      },
 
 });
