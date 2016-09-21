@@ -10,6 +10,9 @@ Router.map(function () {
   this.route('sign-in');
   this.route('change-password');
   this.route('users');
+  this.route('about');
+  this.route('memories');
+  this.route('all-memories');
 });
 
 export default Router;
