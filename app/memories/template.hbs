@@ -1,1 +1,24 @@
 
+
+  {{!-- {{#each model as |my-memory|}}
+    {{#link-to 'memory' memory}}<h2>{{memory.name}}</h2>{{/link-to}}
+  {{/each}} --}}
+
+
+{{!-- <div class="create-memory col-xs-6">
+  <h1>Create Memory</h1>
+  {{#link-to 'new-memory'}}
+
+  <button class="btn btn-warning">Create</button>
+
+
+  {{/link-to}}
+</div> --}}
+
+{{#each model as |memory| }}
+   <h3>{{memory.name}}</h3>
+   <h3>{{memory.description}}</h3>
+   <h3>{{memory.cohort}}</h3>
+{{/each}}
+
+{{outlet}}
