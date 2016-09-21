@@ -4,9 +4,14 @@
 
     <div class="collapse navbar-collapse" id="navigation">
       <ul class="nav navbar-nav">
-        {{#if isAuthenticated}}
+        {{!-- {{#if isAuthenticated}}
         <li>{{#link-to "users"}}Users{{/link-to}}</li>
+        {{/if}} --}}
+        <li>{{#link-to "about"}}About{{/link-to}}</li>
+        {{#if isAuthenticated}}
+        <li>{{#link-to "memories"}}Memories{{/link-to}}</li>
         {{/if}}
+        <li>{{#link-to "all-memories"}}All memories{{/link-to}}</li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
         {{#if isAuthenticated}}
@@ -21,7 +26,7 @@
   </div>
 </nav>
 
-<h1>Welcome to Ember!</h1>
+<h1></h1>
 
 {{#each flashMessages.queue as |flash|}}
   {{flash-message flash=flash}}
