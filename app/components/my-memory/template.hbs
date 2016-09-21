@@ -1,0 +1,13 @@
+<h2>{{memory.name}}</h2>
+<h3>{{memory.description}}</h3>
+<p>{{memory.cohort}}</p>
+
+<div class="edit-buttons">
+  {{#link-to 'update-memory' memory class="btn btn-xs edit"}}
+      Edit Memory
+  {{/link-to}}
+
+  <button class="btn btn-xs btn-danger" {{action "delete"}}>
+    Delete
+  </button>
+</div>
