@@ -6,7 +6,7 @@ export default Ember.Component.extend({
   memory: {},
 
   actions: {
-    edit () {
+    update () {
       this.sendAction('updateMemory', this.get('memory'));
     },
 
