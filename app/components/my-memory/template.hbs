@@ -1,13 +1,14 @@
-<h2>{{memory.name}}</h2>
-<h3>{{memory.description}}</h3>
-<p>{{memory.cohort}}</p>
+<h2>{{memory.title}}</h2>
+<h3>{{memory.artist}}</h3>
+<p>{{memory.description}}</p>
 
 <div class="edit-buttons">
-  {{#link-to 'update-memory' memory class="btn btn-xs edit"}}
+  {{!-- {{#link-to 'update' memory class="btn btn-xs edit"}}
       Edit Memory
-  {{/link-to}}
-
+  {{/link-to}} --}}
+  <h3>Are you sure you want to delete this memory?</h3>
   <button class="btn btn-xs btn-danger" {{action "delete"}}>
     Delete
   </button>
+  {{#link-to 'memories'}}Go back{{/link-to}}
 </div>
