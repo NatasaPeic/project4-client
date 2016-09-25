@@ -7,5 +7,6 @@ export default Ember.Route.extend({
   deactivate: function(){
         $('body').css('background', "none");
 
-      }
+      },
+    
 });
