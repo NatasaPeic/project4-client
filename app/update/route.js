@@ -14,11 +14,11 @@ export default Ember.Route.extend({
         memory.cohort = data.cohort;
         memory.save();
       })
-       .then(() => this.transitionTo('all-memories'));
+       .then(() => this.transitionTo('memories'));
      },
 
     goToMemories () {
-      this.transitionTo('all-memories');
+      this.transitionTo('memories');
     },
   },
 });
