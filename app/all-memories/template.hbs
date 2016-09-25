@@ -1,7 +1,14 @@
 {{#each model as |memory| }}
+{{!-- {{#link-to 'memory' memory }} --}}
    <h3>{{memory.name}}</h3>
    <h3>{{memory.description}}</h3>
    <h3>{{memory.cohort}}</h3>
+   {{!-- {{/link-to}} --}}
 {{/each}}
 
 {{outlet}}
+
+
+{{!-- {{#each model as |memory|}}
+  {{#link-to 'memory' memory }}<h2>{{memory.name}}</h2>{{/link-to}}
+{{/each}} --}}
