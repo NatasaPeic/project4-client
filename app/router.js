@@ -13,9 +13,10 @@ Router.map(function () {
   this.route('about');
   this.route('memories');
   this.route('all-memories');
-  this.route('memory');
+  this.route('memory', {path: '/memories/:id'});
   this.route('new-memory');
-  this.route('update', { path: '/update/:update_id'});
+  this.route('update', { path: '/update/:id'});
+  this.route('user-memory');
 });
 
 export default Router;
