@@ -18,6 +18,7 @@ Router.map(function () {
   this.route('update', { path: '/update/:id'});
   this.route('user-memory');
   this.route('admin');
+  this.route('admin-memories');
 });
 
 export default Router;
