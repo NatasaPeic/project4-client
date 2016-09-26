@@ -1,7 +1,12 @@
 
   {{#each model as |memory|}}
   {{!-- {{#link-to 'memory' memory }}<h2>{{memory.name}}</h2>{{/link-to}} --}}
-    <h2>{{memory.name}}</h2>
+  <h3>{{memory.name}}</h3>
+  <h4>{{memory.description}}</h4>
+  <h4>{{memory.cohort}}</h4>
+
+
+
     {{#link-to 'update' memory class="btn btn-xs edit"}}
         Edit Memory
     {{/link-to}}
@@ -9,8 +14,10 @@
     <button class="btn btn-xs btn-danger" >
       Delete
     </button>
+   <hr class= "style-two">
     {{/link-to}}
   {{/each}}
+
 
 
 
