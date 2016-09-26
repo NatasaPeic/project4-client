@@ -1,13 +1,21 @@
-<h3>{{memory.description}}</h3>
+
+<div class="memories">
+
+
+
+<h4 id="decor" class="all-memories">"{{memory.description}}"</h4>
 
 <div class="edit-buttons">
   {{!-- {{#link-to 'update' memory class="btn btn-xs edit"}}
       Edit Memory
   {{/link-to}} --}}
-  <h3>Are you sure you want to delete this memory?</h3>
-  <button class="btn btn-xs btn-danger" {{action "delete"}}>
+
+  <h3 class="all-memories" id="warning">Are you sure you want to delete this memory?</h3>
+  <button class="btn btn-md btn-danger" {{action "delete"}}>
     Delete
   </button>
-  <h5>{{#link-to 'memories'}}Go back{{/link-to}}</h5>
+  <h5 class="all-memories">{{#link-to 'all-memories'}}Go back{{/link-to}}</h5>
+   <hr class= "style-two">
 
+</div>
 </div>
