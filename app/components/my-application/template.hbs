@@ -7,20 +7,22 @@
         {{!-- {{#if isAuthenticated}}
         <li>{{#link-to "users"}}Users{{/link-to}}</li>
         {{/if}} --}}
-        <li>{{#link-to "about"}}About{{/link-to}}</li>
+        <li>{{#link-to "about" class="nav"}}About{{/link-to}}</li>
 
+        {{#if isAdmin}}
+        <li>{{#link-to "admin"}}Admin{{/link-to}}</li>
+         {{/if}}
 
-        <li>{{#link-to "all-memories"}}All Memories{{/link-to}}</li>
-
+           <li>{{#link-to "all-memories"}}All Memories{{/link-to}}</li>
 
 
        {{#if isAuthenticated}}
         <li>{{#link-to "memories"}}Memories{{/link-to}}</li>
        {{/if}}
 
-        {{#if isAuthenticated}}
+        {{!-- {{#if isAuthenticated}}
         <li>{{#link-to "new-memory"}}Create{{/link-to}}</li>
-        {{/if}}
+        {{/if}} --}}
 
       </ul>
       <ul class="nav navbar-nav navbar-right">
@@ -35,6 +37,13 @@
     </div>
   </div>
 </nav>
+
+{{#if isAuthenticated}}
+{{#link-to 'new-memory'}}
+<button id="GA" type="submit"><img src="http://i.imgur.com/uazk36h.png" width="100px" height="120px" alt="Submit"></button>
+{{/link-to}}
+{{/if}}
+
 
 <h1></h1>
 
