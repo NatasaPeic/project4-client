@@ -9,16 +9,23 @@
         {{/if}} --}}
         <li>{{#link-to "about" class="nav"}}About{{/link-to}}</li>
 
+        <li>{{#link-to "all-memories"}}All Memories{{/link-to}}</li>
+
         {{#if isAdmin}}
         <li>{{#link-to "admin"}}Admin{{/link-to}}</li>
+        {{!-- <li>{{#link-to "admin-memories"}}Admin memories{{/link-to}}</li> --}}
          {{/if}}
 
-           <li>{{#link-to "all-memories"}}All Memories{{/link-to}}</li>
+         {{#if isAdmin }}
+         <li>{{#link-to "admin-memories"}}Admin memories{{/link-to}}</li>
+          {{else if isAuthenticated}}
+            <li>{{#link-to "memories"}}Memories{{/link-to}}</li>
+         {{/if}}
 
 
-       {{#if isAuthenticated}}
-        <li>{{#link-to "memories"}}Memories{{/link-to}}</li>
-       {{/if}}
+
+
+
 
         {{!-- {{#if isAuthenticated}}
         <li>{{#link-to "new-memory"}}Create{{/link-to}}</li>
@@ -38,18 +45,20 @@
   </div>
 </nav>
 
+{{#each flashMessages.queue as |flash|}}
+  {{flash-message flash=flash}}
+{{/each}}
+
 {{#if isAuthenticated}}
 {{#link-to 'new-memory'}}
-<button id="GA" type="submit"><img src="http://i.imgur.com/uazk36h.png" width="100px" height="120px" alt="Submit"></button>
+<button id="GA" type="submit"><img src="http://i.imgur.com/cgvPtkq.png" width="100px" height="120px" alt="Submit"></button>
 {{/link-to}}
 {{/if}}
 
 
 <h1></h1>
 
-{{#each flashMessages.queue as |flash|}}
-  {{flash-message flash=flash}}
-{{/each}}
+
 
 <div class="col-md-8 col-md-offset-2">
   {{outlet}}
