@@ -1,5 +1,3 @@
-{{!-- <h2>{{memory.title}}</h2>
-<h3>{{memory.artist}}</h3> --}}
 <h3>{{memory.description}}</h3>
 
 <div class="edit-buttons">
@@ -10,5 +8,6 @@
   <button class="btn btn-xs btn-danger" {{action "delete"}}>
     Delete
   </button>
-  {{#link-to 'memories'}}Go back{{/link-to}}
+  <h5>{{#link-to 'memories'}}Go back{{/link-to}}</h5>
+
 </div>
