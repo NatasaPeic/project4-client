@@ -9,8 +9,8 @@ export default Ember.Route.extend({
       .then(() => this.transitionTo('memories'));
     },
 
-    goToMemory () {
-      this.transitionTo('memories');
-    },
+    // goToMemory () {
+    //   this.transitionTo('memories');
+    // },
   },
 });
