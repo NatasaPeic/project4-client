@@ -20,11 +20,11 @@ export default Ember.Route.extend({
       .then(() => this.transitionTo('sign-in'))
       .then(() => {
         this.get('flashMessages').warning('You have been signed out.');
-      })
-      .catch(() => {
-        this.get('flashMessages')
-        .danger('There was a problem. Are you sure you\'re signed-in?');
       });
+      // .catch(() => {
+      //   this.get('flashMessages')
+      //   .danger('There was a problem. Are you sure you\'re signed-in?');
+      // });
       this.store.unloadAll();
     },
 
