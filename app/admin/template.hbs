@@ -1,0 +1,13 @@
+{{#each model as |memory| }}
+    {{#link-to 'update' memory }}
+       <h3 id="color" class="all-memories">{{memory.name}}</h3>
+    {{/link-to}}
+
+       <h4 id="decor" class="all-memories">"{{memory.description}}"</h4>
+       <h4  class="all-memories">{{memory.cohort}}</h4>
+
+       <hr class= "style-two">
+       
+{{/each}}
+
+{{outlet}}
