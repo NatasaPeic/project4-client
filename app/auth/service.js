@@ -5,6 +5,7 @@ export default Ember.Service.extend({
   ajax: Ember.inject.service(),
   credentials: storageFor('auth'),
   isAuthenticated: Ember.computed.bool('credentials.token'),
+  // add isAdmin
   isAdmin: Ember.computed.bool('credentials.admin'),
 
   signUp (credentials) {
@@ -32,6 +33,7 @@ export default Ember.Service.extend({
       this.get('credentials').set('id', result.user.id);
       this.get('credentials').set('email', result.user.email);
       this.get('credentials').set('token', result.user.token);
+      // add admin
       this.get('credentials').set('admin', result.user.admin);
       console.log(result);
     });
