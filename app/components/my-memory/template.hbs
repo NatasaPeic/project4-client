@@ -3,12 +3,9 @@
 
 
 
-<h4 id="decor" class="all-memories">"{{memory.description}}"</h4>
+<h4 id="name" class="all-memories">"{{memory.description}}"</h4>
 
 <div class="edit-buttons">
-  {{!-- {{#link-to 'update' memory class="btn btn-xs edit"}}
-      Edit Memory
-  {{/link-to}} --}}
 
   <h3 class="all-memories" id="warning">Are you sure you want to delete this memory?</h3>
   <button class="btn btn-md btn-danger" {{action "delete"}}>
