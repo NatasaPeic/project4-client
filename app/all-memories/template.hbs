@@ -1,17 +1,13 @@
-{{!-- {{#if isAuthenticated}}
-{{#link-to 'new-memory'}}
-<button id="GA" type="submit"><img src="http://i.imgur.com/uazk36h.png" width="100px" height="120px" alt="Submit"></button>
-{{/link-to}}
-{{/if}} --}}
+
 
 <div class="memories">
 
 
 {{#each model as |memory| }}
-{{!-- {{#link-to 'update' memory }} --}}
+
    <h3 id="color" class="all-memories">{{memory.name}}</h3>
    {{!-- {{/link-to}} --}}
-   <h4 id="decor" class="all-memories">"{{memory.description}}"</h4>
+   <h4 id="name" class="all-memories">"{{memory.description}}"</h4>
    <h4  class="all-memories">{{memory.cohort}}</h4>
    <hr class= "style-two">
 
