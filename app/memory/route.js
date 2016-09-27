@@ -10,7 +10,7 @@ export default Ember.Route.extend({
 
     deleteMemory (memory) {
       memory.destroyRecord()
-      .then(() => this.transitionTo('memories'));
+      .then(() => this.transitionTo('about'));
     },
 
     // updateMemory (memory) {
