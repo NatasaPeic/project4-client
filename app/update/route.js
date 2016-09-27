@@ -14,7 +14,7 @@ export default Ember.Route.extend({
         memory.cohort = data.cohort;
         memory.save();
       })
-       .then(() => this.transitionTo('all-memories'));
+       .then(() => this.transitionTo('about'));
       //  .catch(() => {
       //     this.get('flashMessages')
       //     .danger('Sorry, you must be admin to update memory!');
