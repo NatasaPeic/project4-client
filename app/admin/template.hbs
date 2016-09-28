@@ -1,4 +1,4 @@
-<div class="memories">
+ <div class="col-md-8 col-md-offset-2">
 
 
 {{#each model as |memory| }}
@@ -6,13 +6,21 @@
        <h3 id="color" class="all-memories">{{memory.name}}</h3>
     {{/link-to}}
 
+    {{#link-to 'update' memory }}
        <h4 id="name" class="all-memories">"{{memory.description}}"</h4>
+    {{/link-to}}
+
+    {{#link-to 'update' memory }}
        <h4  class="all-memories">{{memory.cohort}}</h4>
+    {{/link-to}}
 
-      
 
 
-       <hr class= "style-two">
+
+
+
+
+         <hr class= "style-five">
 
 {{/each}}
 </div>
