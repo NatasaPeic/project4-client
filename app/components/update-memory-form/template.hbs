@@ -7,10 +7,15 @@
   {{new-memory-description description=memory.description}}
   {{new-memory-cohort cohort=memory.cohort}}
 
-  <button type="submit" class="btn btn-primary submit" {{action "update"}} on="submit">
+  <button type="submit" class="btn btn-success submit" {{action "update"}} on="submit">
     Update
   </button>
   <button class="btn btn-default" {{action "reset"}} on="click">
     Cancel
   </button>
+
+  {{#link-to 'memories'}}
+  <button class="btn btn-default">
+   Go back  </button>
+  {{/link-to}}
 </div>
