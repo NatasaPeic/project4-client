@@ -1,30 +1,76 @@
 @import 'bootstrap';
 @import 'bootstrap/theme';
 @import 'https://fonts.googleapis.com/css?family=Open+Sans';
-
+// @import 'https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300';
+// @import 'https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300i';
+@import 'https://fonts.googleapis.com/css?family=Over+the+Rainbow';
+// @import 'https://fonts.googleapis.com/css?family=Architects+Daughter';
+@import 'https://fonts.googleapis.com/css?family=Reenie+Beanie';
 body {
   font-family: 'Open Sans', sans-serif;
+  // font-family: 'Over the Rainbow', cursive;
+  // font-family: 'Open Sans Condensed', sans-serif;
+  // font-family: 'Sacramento', cursive;
+  // font-family: 'Open Sans Condensed', sans-serif;
 }
 
-hr.style-two {
+
+
+hr.style-five {
     border: 0;
-    height: 1px;
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(255,0,0,0.3), rgba(0, 0, 0, 0));
+    height: 0; /* Firefox... */
+    box-shadow: 0 0 8px 2px white;
 }
 
+hr.style-five:after {  /* Not really supposed to work, but does */
+    content: "\00a0";  /* Prevent margin collapse */
+}
 
 .all-memories {
   text-align: center;
-
 }
+
+nav {
+    margin-top: 10px;
+      font-family: 'Over the Rainbow', cursive;
+}
+
+hr.style11 {
+	height: 10px;
+	background: url(http://ibrahimjabbari.com/english/images/hr-11.png) repeat-x 0 0;
+  border: 0;
+}
+
+hr.style16 {
+  border-top: 1px dashed #8c8b8b;
+}
+
+
+hr.style16:after {
+  content: '\002702';
+  display: inline-block;
+  position: relative;
+  top: -12px;
+  left: 40px;
+  padding: 0 3px;
+  background: #f0f0f0;
+  color: #8c8b8b;
+  font-size: 18px;
+}
+
 
 #name {
   font-style: italic;
+  word-wrap: break-word;
+  display: block;
+  font-family: 'Reenie Beanie', cursive;
+  text-align: center;
 }
 
 #color {
   color: #B40404;
   font-weight: bold;
+  font-size: 45px;
 }
 
 #GA {
@@ -35,22 +81,33 @@ hr.style-two {
    cursor:pointer;
    overflow: hidden;
    outline:none;
-   margin-left: 5%;
-   margin-top: 50px;
-
+   margin-left: 240px;
+   margin-top: 85px;
+   margin-right: -80px
 }
 
-// .col-md-8 {
-//     margin-top: -230px;
-// }
 
-// .memories {
-//   margin-top: -200px;
-// }
+.button {
+  margin-left: -25%;
+  margin-top: -50px;
+  display: inline-block;
+  float: left
+}
 
+.col-md-8 {
+    margin-bottom: 50px;
+}
+
+
+a {
+  font-size: 18px;
+  font-weight: bold;
+}
 
 .btn-xs {
-    margin-left: 43%;
+    margin-left: 35%;
+    font-size: 18px;
+    color: white;
 }
 
 .btn-md {
@@ -63,4 +120,18 @@ hr.style-two {
 
 #warning {
   color: #B40404;
+}
+
+h3, h4 {
+    // font-family: 'Over the Rainbow', cursive;
+    // font-family: 'Architects Daughter', cursive;
+    font-family: 'Reenie Beanie', cursive;
+    color: white;
+    font-size: 35px;
+}
+
+@media (max-width: 1200px) {
+  .button {
+    float: none;
+  }
 }
