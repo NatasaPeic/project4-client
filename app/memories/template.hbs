@@ -1,46 +1,34 @@
- <div class="memories">
+<div class="button">
+
+
+{{ga-button-white}}
+</div>
+
+
+ <div class="col-md-8 col-md-offset-2">
 
 
   {{#each model as |memory|}}
-  {{!-- {{#link-to 'memory' memory }}<h2>{{memory.name}}</h2>{{/link-to}} --}}
   <h3 id="color" class="all-memories">{{memory.name}}</h3>
   <h4 id="name" class="all-memories">"{{memory.description}}"</h4>
   <h4  class="all-memories">{{memory.cohort}}</h4>
 
 
 
-
-
     {{#link-to 'update' memory class="btn btn-xs edit"}}
         Edit Memory
     {{/link-to}}
+
     {{#link-to 'memory' memory}}
     <button id="delete" class="btn btn-xs btn-danger" >
       Delete
     </button>
-   <hr class= "style-two">
+   <hr class= "style-five">
     {{/link-to}}
-  {{/each}}
+   {{/each}}
 
 
  </div>
 
-
-{{!-- <div class="create-memory col-xs-6">
-  <h1>Create Memory</h1>
-  {{#link-to 'new-memory'}}
-
-  <button class="btn btn-warning">Create</button>
-
-
-  {{/link-to}}
-</div> --}}
-
-
-{{!-- {{#each model as |memory| }}
-   <h3>{{memory.name}}</h3>
-   <h3>{{memory.description}}</h3>
-   <h3>{{memory.cohort}}</h3>
-{{/each}} --}}
 
 {{outlet}}
