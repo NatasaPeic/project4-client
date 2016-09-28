@@ -1,23 +1,30 @@
+<div class="button">
 
 
-<div class="memories">
-
+{{ga-button-white}}
+</div>
+ <div class="col-md-8 col-md-offset-2">
 
 {{#each model as |memory| }}
 
    <h3 id="color" class="all-memories">{{memory.name}}</h3>
    {{!-- {{/link-to}} --}}
-   <h4 id="name" class="all-memories">"{{memory.description}}"</h4>
+   <h4 id="name" >"{{memory.description}}"</h4>
    <h4  class="all-memories">{{memory.cohort}}</h4>
 
 
 
 
-   <hr class= "style-two">
+    <hr class= "style-five">
 
 {{/each}}
 </div>
 
+{{!-- {{#if isAuthenticated}}
+{{#link-to 'new-memory'}}
+<button id="GA" type="submit"><img src="http://i.imgur.com/q65O9de.png" width="120px" height="200px" alt="Submit"></button>
+{{/link-to}}
+{{/if}} --}}
 
 
 
