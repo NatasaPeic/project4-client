@@ -11,7 +11,11 @@
   <button class="btn btn-md btn-danger" {{action "delete"}}>
     Delete
   </button>
-  <h5 class="all-memories">{{#link-to 'all-memories'}}Go back{{/link-to}}</h5>
+
+  {{#link-to 'all-memories'}}
+  <button class="btn btn-default">
+   Go back  </button>
+  {{/link-to}}
    <hr class= "style-two">
 
 </div>

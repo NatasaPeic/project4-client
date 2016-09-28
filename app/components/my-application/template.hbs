@@ -33,6 +33,8 @@
   </div>
 </nav>
 
+
+
 {{#each flashMessages.queue as |flash|}}
   {{flash-message flash=flash}}
 {{/each}}
@@ -47,15 +49,17 @@
 <h1></h1>
 
 
-  {{#if isAuthenticated}}
+
+
+  {{!-- {{#if isAuthenticated}}
   {{#link-to 'new-memory'}}
-  <button id="GA" type="submit"><img src="http://i.imgur.com/uSjBjFA.png" width="120px" height="200px" alt="Submit"></button>
+  <button id="GA" type="submit"><img src="http://i.imgur.com/q65O9de.png" width="120px" height="200px" alt="Submit"></button>
   {{/link-to}}
-  {{/if}}
+  {{/if}} --}}
 
 
 
-<div class="col-md-8 col-md-offset-2">
+<div class="col-md-8 col-md-offset-2 " >
 
   {{outlet}}
 
