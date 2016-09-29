@@ -2,16 +2,17 @@
  <div class="col-md-8 col-md-offset-2">
 
     {{#each model as |memory|}}
-          <h3 id="color" class="all-memories">{{memory.name}}</h3>
+          <h3 id="color" class="all-memories">Created by: {{memory.name}}</h3>
           <h3 id="name" class="all-memories">"{{memory.description}}"</h3>
           <h4  class="all-memories">{{memory.cohort}}</h4>
+          <h4  class="all-memories">{{memory.date}}</h4>
 
 
     {{#link-to 'memory' memory}}
         <button  class="btn btn-md btn-danger" >
           Delete
         </button>
-        <hr class= "style-two">
+        <hr class= "style-five">
     {{/link-to}}
    {{/each}}
 

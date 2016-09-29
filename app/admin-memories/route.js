@@ -1,5 +1,4 @@
 
-
 export default Ember.Route.extend({
   activate: function(){
         $('body').css('background', "url('http://i.imgur.com/ZZnpGYB.jpg') no-repeat center center fixed");
@@ -19,8 +18,5 @@ export default Ember.Route.extend({
           memory.destroyRecord()
           .then(() => this.transitionTo('admin-memories'));
         },
-
       },
-
-
 });
