@@ -6,15 +6,16 @@
   {{new-memory-name name=memory.name}}
   {{new-memory-description description=memory.description}}
   {{new-memory-cohort cohort=memory.cohort}}
+  {{new-memory-date date=memory.date}}
 
   <button type="submit" class="btn btn-success submit" {{action "update"}} on="submit">
-    Update
+    Edit Your meMory
   </button>
   <button class="btn btn-default" {{action "reset"}} on="click">
     Cancel
   </button>
 
-  {{#link-to 'memories'}}
+  {{#link-to 'about'}}
   <button class="btn btn-default">
    Go back  </button>
   {{/link-to}}
