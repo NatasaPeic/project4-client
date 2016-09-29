@@ -5,7 +5,7 @@ Back end: https://github.com/NatasaPeic/project4-api
 Link to live-application: https://natasapeic.github.io/project4-client/#/about
 
 
-Memory GA book connects people that recently graduated GA. It creates a collection of people's memories and keeps them in once place.
+Memory GA book connects people that recently graduated GA. It creates a collection of people's memories and keeps them in one place.
 
 Each user is able to see all users memories without signing in. Once the user creates an account, the user can add its own memory and further update it or delete it from the dashboard. One user can have multiple stories/memories.
 
