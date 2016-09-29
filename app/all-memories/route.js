@@ -18,12 +18,8 @@ export default Ember.Route.extend({
         $('body').css('background', "none");
 
       },
-      // model() {
-      //   return this.get('store').findAll('memory');
-      // },
 
 model: function(params){
-    // this.set('memories', params.memory);
     console.log(params);
     return this.get('ajax').request(`/memories?all=true`, {  method: 'GET' })
     .then((data) => {
@@ -32,6 +28,5 @@ model: function(params){
     });
 
   },
-
 
 });

@@ -10,22 +10,15 @@ export default Ember.Route.extend({
       },
   deactivate: function(){
         $('body').css('background', "none");
-
       },
 
 
 model: function(params){
-    // this.set('memories', params.memory);
     console.log(params);
     return this.get('ajax').request(`/memories?all=true`, {  method: 'GET' })
     .then((data) => {
       console.log(data);
       return data.memories;
     });
-
   },
-
-
-
-
 });

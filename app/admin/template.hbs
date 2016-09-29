@@ -3,7 +3,7 @@
 
 {{#each model as |memory| }}
     {{#link-to 'update' memory }}
-       <h3 id="color" class="all-memories">{{memory.name}}</h3>
+       <h3 id="color" class="all-memories">Created by: {{memory.name}}</h3>
     {{/link-to}}
 
     {{#link-to 'update' memory }}
@@ -13,14 +13,12 @@
     {{#link-to 'update' memory }}
        <h4  class="all-memories">{{memory.cohort}}</h4>
     {{/link-to}}
+    {{#link-to 'update' memory }}
+       <h4  class="all-memories">{{memory.date}}</h4>
+    {{/link-to}}
 
 
-
-
-
-
-
-         <hr class= "style-five">
+    <hr class= "style-five">
 
 {{/each}}
 </div>

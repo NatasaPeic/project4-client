@@ -7,6 +7,4 @@ export default Ember.Component.extend({
   isAuthenticated: Ember.computed.alias('auth.isAuthenticated'),
   isAdmin: Ember.computed.alias('auth.isAdmin'),
 
-
-
 });
