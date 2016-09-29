@@ -1,6 +1,4 @@
 <div class="button">
-
-
 {{ga-button-white}}
 </div>
 
@@ -9,14 +7,12 @@
 
 
   {{#each model as |memory|}}
-  <h3 id="color" class="all-memories">{{memory.name}}</h3>
   <h4 id="name" class="all-memories">"{{memory.description}}"</h4>
-  <h4  class="all-memories">{{memory.cohort}}</h4>
-
+  <h4 id="name" class="all-memories">Created on: {{memory.date}}</h4>
 
 
     {{#link-to 'update' memory class="btn btn-xs edit"}}
-        Edit Memory
+        Edit Your meMory
     {{/link-to}}
 
     {{#link-to 'memory' memory}}

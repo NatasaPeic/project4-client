@@ -13,8 +13,5 @@ export default Ember.Route.extend({
       .then(() => this.transitionTo('about'));
     },
 
-    // updateMemory (memory) {
-    //   this.transitionTo('update-memory', memory);
-    // },
   },
 });
