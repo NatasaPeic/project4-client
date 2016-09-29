@@ -12,7 +12,6 @@ export default Ember.Component.extend({
 
    reset () {
      this.set('memory', {});
-     this.sendAction('goToMemory');
    },
  },
 });
