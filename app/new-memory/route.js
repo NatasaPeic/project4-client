@@ -5,12 +5,9 @@ export default Ember.Route.extend({
 
     createMemory (data) {
       let memory = this.get('store').createRecord('memory', data);
+      console.log(data);
       return memory.save()
       .then(() => this.transitionTo('about'));
     },
-
-    // goToMemory () {
-    //   this.transitionTo('memories');
-    // },
   },
 });
