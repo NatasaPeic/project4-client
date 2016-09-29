@@ -12,12 +12,6 @@ export default Ember.Route.extend({
       },
       model() {
         return this.get('store').findAll('memory');
-      //   // return users: this.store.findAll('user'),
-      //
-      // },
-  //     return new Ember.RSVP.hash({
-  //    memory: this.store.findRecord('memory'),
-  //    users: this.store.findAll('user'),
-  //  });
+  
 },
 });
