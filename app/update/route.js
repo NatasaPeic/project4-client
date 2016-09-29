@@ -12,17 +12,11 @@ export default Ember.Route.extend({
         memory.name = data.name;
         memory.description = data.description;
         memory.cohort = data.cohort;
+        memory.date =  data.date;
         memory.save();
       })
        .then(() => this.transitionTo('about'));
-      //  .catch(() => {
-      //     this.get('flashMessages')
-      //     .danger('Sorry, you must be admin to update memory!');
-      //   });
-     },
 
-    // goToMemories () {
-    //   this.transitionTo('memories');
-    // },
+     },
   },
 });
