@@ -1,17 +1,13 @@
 @import 'bootstrap';
 @import 'bootstrap/theme';
 @import 'https://fonts.googleapis.com/css?family=Open+Sans';
-// @import 'https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300';
-// @import 'https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300i';
 @import 'https://fonts.googleapis.com/css?family=Over+the+Rainbow';
-// @import 'https://fonts.googleapis.com/css?family=Architects+Daughter';
+@import 'https://fonts.googleapis.com/css?family=Architects+Daughter';
 @import 'https://fonts.googleapis.com/css?family=Reenie+Beanie';
+@import 'https://fonts.googleapis.com/css?family=Architects+Daughter|Homemade+Apple|Nothing+You+Could+Do|Reenie+Beanie|Shadows+Into+Light';
+
 body {
   font-family: 'Open Sans', sans-serif;
-  // font-family: 'Over the Rainbow', cursive;
-  // font-family: 'Open Sans Condensed', sans-serif;
-  // font-family: 'Sacramento', cursive;
-  // font-family: 'Open Sans Condensed', sans-serif;
 }
 
 
@@ -35,29 +31,6 @@ nav {
       font-family: 'Over the Rainbow', cursive;
 }
 
-hr.style11 {
-	height: 10px;
-	background: url(http://ibrahimjabbari.com/english/images/hr-11.png) repeat-x 0 0;
-  border: 0;
-}
-
-hr.style16 {
-  border-top: 1px dashed #8c8b8b;
-}
-
-
-hr.style16:after {
-  content: '\002702';
-  display: inline-block;
-  position: relative;
-  top: -12px;
-  left: 40px;
-  padding: 0 3px;
-  background: #f0f0f0;
-  color: #8c8b8b;
-  font-size: 18px;
-}
-
 
 #name {
   font-style: italic;
@@ -67,14 +40,22 @@ hr.style16:after {
   text-align: center;
 }
 
+.description {
+  font-style: italic;
+  word-wrap: break-word;
+  display: block;
+  font-family: 'Reenie Beanie', cursive;
+  color: black;
+  text-align: center;
+}
+
 #color {
-  color: #B40404;
+  color: #ef3e3e;
   font-weight: bold;
-  font-size: 45px;
+  font-size: 30px;
 }
 
 #GA {
-
    background-color: Transparent;
    background-repeat:no-repeat;
    border: none;
@@ -84,6 +65,19 @@ hr.style16:after {
    margin-left: 240px;
    margin-top: 85px;
    margin-right: -80px
+}
+
+
+#GA-white {
+  background-color: Transparent;
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+  outline: none;
+  margin-left: 63%;
+  margin-top: 46%;
+  margin-right: -80px;
 }
 
 
@@ -123,9 +117,7 @@ a {
 }
 
 h3, h4 {
-    // font-family: 'Over the Rainbow', cursive;
-    // font-family: 'Architects Daughter', cursive;
-    font-family: 'Reenie Beanie', cursive;
+    font-family: 'Architects Daughter', cursive;
     color: white;
     font-size: 35px;
 }
