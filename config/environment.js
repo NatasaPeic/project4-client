@@ -43,7 +43,7 @@ module.exports = function(environment) {
   if (environment === 'production') {
     ENV.baseURL = '/';
     ENV.locationType = 'hash';
-    ENV.apiHost = 'https://secure-crag-34378.herokuapp.com/';
+    ENV.apiHost = 'https://secure-crag-34378.herokuapp.com';
   }
 
   return ENV;
